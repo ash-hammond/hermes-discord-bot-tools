@@ -1,0 +1,36 @@
+name: discord-bot-tools
+version: 0.1.0
+description: Full Discord bot REST tools for Hermes agents (application profile, messages, guilds, channels, members, and generic API access)
+author: Adachi / Ash
+provides_tools:
+  - discord_api_request
+  - discord_get_current_application
+  - discord_update_application
+  - discord_get_current_bot_user
+  - discord_update_current_bot_user
+  - discord_list_guilds
+  - discord_get_guild
+  - discord_list_guild_channels
+  - discord_get_channel
+  - discord_send_message
+  - discord_edit_message
+  - discord_delete_message
+  - discord_add_reaction
+  - discord_remove_own_reaction
+  - discord_create_thread
+  - discord_update_my_guild_member
+provides_hooks: []
+requires_env:
+  - name: DISCORD_BOT_TOKEN
+    description: Discord bot token used to authenticate official Discord REST API calls
+    url: https://discord.com/developers/applications
+    secret: true
+  - name: DISCORD_BOT_TOOLS_ALLOW_DANGEROUS
+    description: >-
+      Optional. Set to "true" to allow high-risk moderation/destructive actions
+      through discord_api_request (for example bans, kicks, bulk deletes, guild/channel deletes).
+      Leave unset for safer default operation.
+    secret: false
+  - name: DISCORD_BOT_TOOLS_API_BASE
+    description: Optional Discord API base URL override. Defaults to https://discord.com/api/v10
+    secret: false

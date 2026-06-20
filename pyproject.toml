@@ -1,0 +1,17 @@
+[project]
+name = "hermes-discord-bot-tools"
+version = "0.1.0"
+description = "Full Discord bot REST tools plugin for Hermes Agent"
+requires-python = ">=3.11"
+license = "MIT"
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 96
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "SIM", "UP"]
