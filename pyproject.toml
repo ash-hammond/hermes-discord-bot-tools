@@ -10,7 +10,7 @@ readme = "README.md"
 dev = ["pytest>=8", "ruff>=0.6"]
 
 [tool.ruff]
-line-length = 96
+line-length = 240
 target-version = "py311"
 
 [tool.ruff.lint]

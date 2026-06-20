@@ -31,14 +31,19 @@ High-risk paths include guild/channel deletes, bans, kicks, bulk deletes, role/m
 ## Install
 
 ```bash
-hermes plugins install ash/hermes-discord-bot-tools --enable
+hermes plugins install OWNER/hermes-discord-bot-tools --enable
 ```
 
-Or install from a local checkout:
+Or install from an explicit Git URL:
 
 ```bash
-git clone https://github.com/ash/hermes-discord-bot-tools.git
-hermes plugins install ./hermes-discord-bot-tools --enable
+hermes plugins install https://github.com/OWNER/hermes-discord-bot-tools.git --enable
+```
+
+For local development before publication, install from a local Git URL:
+
+```bash
+hermes plugins install file:///absolute/path/to/hermes-discord-bot-tools --no-enable
 ```
 
 Then set the bot token in the Hermes environment used by your gateway:
