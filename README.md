@@ -31,13 +31,13 @@ High-risk paths include guild/channel deletes, bans, kicks, bulk deletes, role/m
 ## Install
 
 ```bash
-hermes plugins install OWNER/hermes-discord-bot-tools --enable
+hermes plugins install ash-hammond/hermes-discord-bot-tools --enable
 ```
 
 Or install from an explicit Git URL:
 
 ```bash
-hermes plugins install https://github.com/OWNER/hermes-discord-bot-tools.git --enable
+hermes plugins install https://github.com/ash-hammond/hermes-discord-bot-tools.git --enable
 ```
 
 For local development before publication, install from a local Git URL:
