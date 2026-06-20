@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "hermes-discord-bot-tools"
 version = "0.1.0"
@@ -8,6 +12,9 @@ readme = "README.md"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools]
+py-modules = ["schemas", "tools"]
 
 [tool.ruff]
 line-length = 240
