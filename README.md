@@ -126,3 +126,5 @@ No runtime dependencies beyond Python stdlib.
 ## Notes
 
 This plugin does not replace the Hermes Discord gateway. The gateway receives Discord messages and routes conversations. This plugin gives the agent callable tools for Discord REST operations.
+
+For community workflows that also need X/Twitter research, account reading, or explicitly enabled posting, pair this plugin with [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet). Keep Discord REST operations in this plugin, then use Hermes Tweet for the X/Twitter side of announcements, monitoring, or follow-up.
